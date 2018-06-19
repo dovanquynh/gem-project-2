@@ -154,11 +154,14 @@
                             return;
                         }
                         infoWindow.setContent('<div><br><strong>' + result.name + '</strong></br>' +
-                                                   'Address: ' + result.formatted_address + '</br>' +
-                                                   'Rating: ' + result.rating + '&nbsp;<i class="fas fa-star" style="color:#ff9600;"></i>' +
+                                                    'Address: ' + result.formatted_address + '</br>' +
+                                                    'Number: ' + result.formatted_phone_number  + '</br>' +
+                                                    'Rating: ' + result.rating + '&nbsp;<i class="fas fa-star" style="color:#ff9600;"></i>' +
                                                 '</div>');
                         infoWindow.open(map, marker);
+                        console.log(result)
                     });
+
 
                 });
             }
